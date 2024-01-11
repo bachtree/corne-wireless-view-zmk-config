@@ -15,6 +15,11 @@
             bindings = <&mo 3>;
             key-positions = <37 40>;
         };
+
+        layer3lock {
+            bindings = <&tog 3>;
+            key-positions = <11 35>;
+        };
     };
 
     keymap {
@@ -70,10 +75,10 @@
 
         layer_3 {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E     &kp R   &kp T        &trans     &trans    &kp UP_ARROW  &trans     &trans  &trans
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G        &trans     &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B        &trans     &trans    &trans        &trans     &trans  &trans
-                         &kp LALT  &trans  &kp SPACE    &kp ENTER  &trans    &trans
+&kp ESC    &kp Q  &kp W  &kp E     &kp R  &kp T        &trans     &trans    &kp UP_ARROW  &trans     &trans  &trans
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &trans     &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &trans     &trans    &trans        &trans     &trans  &trans
+                         &kp LALT  &mo 4  &kp SPACE    &kp ENTER  &trans    &trans
             >;
         };
 

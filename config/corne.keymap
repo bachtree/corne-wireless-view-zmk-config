@@ -133,19 +133,23 @@
                            &trans  &trans  &kp SPACE    &kp SPACE  &trans     &kp RALT
             >;
         };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans        &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        layer3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-
-        layer3win {
-            if-layers = <6 7>;
-            then-layer = <3>;
+        layer8 {
+            if-layers = <5 6 7>;
+            then-layer = <8>;
         };
     };
 };
